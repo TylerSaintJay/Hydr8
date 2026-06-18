@@ -1,23 +1,23 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Purification from './components/Purification';
+import Pillars from './components/Pillars';
+import WaterLab from './components/WaterLab';
 import Calculator from './components/Calculator';
-import UseCases from './components/UseCases';
+import StorePreview from './components/StorePreview';
 import Testimonials from './components/Testimonials';
-import Cafe from './components/Cafe';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-brand-cyan/30">
+    <div className="min-h-screen font-sans selection:bg-brand-blue/30 bg-brand-cream">
       <Header />
       <main>
         <Hero />
-        <Cafe />
-        <Purification />
+        <Pillars />
+        <WaterLab />
         <Calculator />
+        <StorePreview />
         <Testimonials />
-        <UseCases />
       </main>
       <Footer />
     </div>
