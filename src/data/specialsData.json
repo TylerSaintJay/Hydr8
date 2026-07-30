@@ -1,0 +1,117 @@
+{
+  "lastUpdated": "Daily Chalkboard Specials",
+  "categories": [
+    {
+      "id": "savoury-sweet",
+      "name": "Savoury & Sweet",
+      "subtitle": "Homemade with love • Made to make your day sweeter",
+      "items": [
+        {
+          "name": "Artisanal Seed Bread",
+          "price": "R25",
+          "unit": "per loaf",
+          "description": "Freshly baked whole-grain nutrient seed loaf",
+          "badge": "Daily Baked"
+        },
+        {
+          "name": "Gourmet Quiche Slice",
+          "price": "R110",
+          "unit": "per portion",
+          "description": "Rich spinach, feta & roast pepper quiche in butter crust",
+          "badge": "Chef Special"
+        },
+        {
+          "name": "Cheese Griller Pies",
+          "price": "R37 - R47",
+          "unit": "each",
+          "description": "Flaky golden puff pastry filled with savory cheese griller",
+          "badge": "Customer Fav"
+        },
+        {
+          "name": "Rice Krispy Treats",
+          "price": "R15",
+          "unit": "each",
+          "description": "Classic chewy marshmallow crisp square",
+          "badge": "Sweet Treat"
+        },
+        {
+          "name": "Handmade Biscotti",
+          "price": "R15",
+          "unit": "pack of 2",
+          "description": "Double-baked almond biscotti, ideal for coffee dipping",
+          "badge": "Coffee Pair"
+        }
+      ]
+    },
+    {
+      "id": "water-deals",
+      "name": "Water & Refills",
+      "subtitle": "Refills — Better for you, better for the planet!",
+      "items": [
+        {
+          "name": "RO Water Refills",
+          "price": "R2.50",
+          "unit": "per Liter",
+          "description": "8-Stage reverse osmosis purified water. Bring your container!",
+          "badge": "Eco Saver"
+        },
+        {
+          "name": "Alkaline Water Refills",
+          "price": "R7.50",
+          "unit": "per Liter",
+          "description": "pH 8.5+ mineral-infused hydration for peak recovery",
+          "badge": "Biohack Choice"
+        },
+        {
+          "name": "RO Bottled 5L Jug",
+          "price": "R40",
+          "unit": "5 Litre",
+          "description": "Pre-filled sealed 5L bottle of pure RO water",
+          "badge": "Pantry Staple"
+        },
+        {
+          "name": "Alkaline 750ml Sports Bottle",
+          "price": "R17",
+          "unit": "750ml",
+          "description": "Chilled alkaline sports water on the go",
+          "badge": "Gym Companion"
+        }
+      ]
+    },
+    {
+      "id": "biltong-combos",
+      "name": "Biltong & Snacks",
+      "subtitle": "Premium quality • Made the traditional way",
+      "items": [
+        {
+          "name": "Yellow Fat Biltong",
+          "price": "R399.99",
+          "unit": "per kg",
+          "description": "Traditional Ciskei grass-fed beef with golden yellow fat",
+          "badge": "Artisan Cured"
+        },
+        {
+          "name": "White Fat Biltong",
+          "price": "R350",
+          "unit": "per kg",
+          "description": "Lean, tender beef sliced thin with traditional spice rub",
+          "badge": "High Protein"
+        },
+        {
+          "name": "Babalas Mix Biltong",
+          "price": "R375",
+          "unit": "per kg",
+          "description": "Chilli bites, biltong snapsticks, and cured beef cubes combo",
+          "badge": "Weekend Snack"
+        },
+        {
+          "name": "Traditional Droewors",
+          "price": "R350",
+          "unit": "per kg",
+          "description": "Hand-stuffed dry sausage spiced with coriander and nutmeg",
+          "badge": "Local Legend"
+        }
+      ]
+    }
+  ]
+}

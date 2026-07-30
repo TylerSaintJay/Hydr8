@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
-import { MapPin, Clock, Droplets, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Droplets, ArrowRight, MessageCircle, Phone } from 'lucide-react';
 
 export default function Footer() {
   const hours = [
-    { day: 'Mon – Fri', time: '07:00 – 18:00', note: 'Morning commuter friendly' },
-    { day: 'Saturday', time: '08:00 – 16:00', note: 'Weekend refills' },
-    { day: 'Sunday', time: '09:00 – 14:00', note: 'Essential top-ups' },
+    { day: 'Mon – Fri', time: '08:00 – 19:00', note: 'Full store & refill service' },
+    { day: 'Saturday', time: '08:00 – 17:00', note: 'Weekend coffee & refills' },
+    { day: 'Sunday', time: '08:00 – 14:00', note: 'Essential top-ups & treats' },
   ];
 
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative rounded-[2rem] bg-brand-blue overflow-hidden px-6 py-16 sm:py-20 flex flex-col items-center justify-center text-center shadow-2xl shadow-brand-blue/20"
+          className="relative rounded-[2.5rem] bg-brand-blue overflow-hidden px-6 py-16 sm:py-20 flex flex-col items-center justify-center text-center shadow-2xl shadow-brand-blue/20"
         >
           {/* Decorative background texture */}
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent blur-xl" />
@@ -27,6 +27,9 @@ export default function Footer() {
             <h2 className="font-script text-5xl sm:text-6xl md:text-7xl text-white drop-shadow-md">
               Sit. Savour. Stay. <span className="font-sans text-brand-cream">♡</span>
             </h2>
+            <p className="font-chalk text-2xl text-amber-200 mt-2">
+              Homemade with love • Made to make your day sweeter
+            </p>
             <span className="hidden sm:block text-brand-cream/30 text-2xl mt-4">—</span>
           </div>
         </motion.div>
@@ -43,9 +46,13 @@ export default function Footer() {
               </div>
               <span className="text-2xl font-black tracking-tight text-brand-blue uppercase">Hydr8</span>
             </div>
-            <p className="text-sm font-medium text-brand-navy/60 leading-relaxed max-w-xs mb-8">
-              Everything you need, all in one place. Your neighbourhood destination for premium purified water, coffee, and daily essentials.
+            <p className="text-sm font-medium text-brand-navy/70 leading-relaxed max-w-xs mb-6">
+              Everything you need, all in one place. Your neighbourhood destination for 8-stage purified water, craft coffee, artisan biltong, fresh bakery, and braai spices.
             </p>
+            <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-xl inline-flex border border-emerald-200">
+              <MessageCircle className="h-4 w-4" />
+              <span>WhatsApp: 062 183 6915</span>
+            </div>
           </div>
 
           {/* Location Col */}
@@ -54,19 +61,21 @@ export default function Footer() {
               <MapPin className="h-5 w-5 text-brand-blue" />
               The Storefront
             </h3>
-            <div className="space-y-4 text-sm font-medium text-brand-navy/80">
+            <div className="space-y-3 text-sm font-medium text-brand-navy/80">
               <p className="text-xl font-bold text-brand-navy">35 Elizabeth Ave</p>
               <p className="text-base">Linmeyer, JHB South</p>
               <p>Johannesburg, 2190</p>
               
-              <a
-                href="https://maps.google.com/?q=35+Elizabeth+Ave,+Linmeyer,+Johannesburg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 text-brand-blue font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
-              >
-                Get Directions <ArrowRight className="h-4 w-4" />
-              </a>
+              <div className="pt-2">
+                <a
+                  href="https://maps.google.com/?q=35+Elizabeth+Ave,+Linmeyer,+Johannesburg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-brand-blue font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
+                >
+                  Get Directions <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -95,11 +104,11 @@ export default function Footer() {
 
         <div className="mt-16 border-t border-brand-blue/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs font-bold uppercase tracking-widest text-brand-navy/40">
-            &copy; {new Date().getFullYear()} Hydr8. All rights reserved.
+            &copy; {new Date().getFullYear()} Hydr8 Linmeyer. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs font-bold uppercase tracking-widest text-brand-navy/40">
-            <a href="#" className="hover:text-brand-blue transition-colors">Privacy</a>
-            <a href="#" className="hover:text-brand-blue transition-colors">Terms</a>
+            <a href="#" className="hover:text-brand-blue transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-brand-blue transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

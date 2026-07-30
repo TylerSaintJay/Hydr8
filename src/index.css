@@ -3,10 +3,16 @@
 @theme {
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-script: "Great Vibes", cursive;
+  --font-chalk: "Caveat", cursive;
   --color-brand-blue: #005EAA;
-  --color-brand-cream: #F5EFE6;
+  --color-brand-cream: #FDFBF9;
+  --color-brand-cream-warm: #F5EFE6;
   --color-brand-navy: #0A2540;
   --color-brand-wood: #D7BA89;
+  --color-brand-slate: #1E232A;
+  --color-brand-slate-dark: #14181F;
+  --color-brand-sage: #5B7B5B;
+  --color-brand-amber: #E5A93C;
   --color-brand-base: #1F2937;
 }
 
@@ -18,8 +24,22 @@
 @utility bg-wood-texture {
   background-color: var(--color-brand-wood);
   background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
-  /* Optional slight gradient for depth */
   box-shadow: inset 0 0 50px rgba(0,0,0,0.1);
+}
+
+@utility bg-chalkboard {
+  background-color: var(--color-brand-slate);
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 80%),
+                    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='chalkNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23chalkNoise)' opacity='0.12'/%3E%3C/svg%3E");
+}
+
+@utility border-chalk {
+  border-style: dashed;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

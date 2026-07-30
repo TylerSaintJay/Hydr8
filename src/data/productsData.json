@@ -1,0 +1,85 @@
+[
+  {
+    "id": "water",
+    "title": "1. Purified Water & Refill Station",
+    "category": "Water Menu",
+    "description": "Lab-verified 8-stage Reverse Osmosis (RO) & mineralized Alkaline water.",
+    "icon": "Droplet",
+    "items": [
+      { "id": "ro-500ml", "name": "RO Water 500ml", "price": 8.00, "priceDisplay": "R8.00", "unit": "bottle", "category": "Water" },
+      { "id": "ro-750ml", "name": "RO Water 750ml", "price": 10.00, "priceDisplay": "R10.00", "unit": "bottle", "category": "Water" },
+      { "id": "ro-15l", "name": "RO Water 1.5L", "price": 25.00, "priceDisplay": "R25.00", "unit": "bottle", "category": "Water" },
+      { "id": "ro-5l", "name": "RO Water 5L", "price": 40.00, "priceDisplay": "R40.00", "unit": "bottle", "category": "Water" },
+      { "id": "alk-500ml", "name": "Alkaline Water 500ml", "price": 13.00, "priceDisplay": "R13.00", "unit": "bottle", "category": "Water" },
+      { "id": "alk-750ml", "name": "Alkaline Water 750ml", "price": 17.00, "priceDisplay": "R17.00", "unit": "bottle", "category": "Water" },
+      { "id": "ro-refill", "name": "RO Bulk Refill", "price": 2.50, "priceDisplay": "R2.50", "unit": "per Liter", "category": "Water" },
+      { "id": "alk-refill", "name": "Alkaline Bulk Refill", "price": 7.50, "priceDisplay": "R7.50", "unit": "per Liter", "category": "Water" }
+    ]
+  },
+  {
+    "id": "biltong",
+    "title": "2. Premium Biltong & Droewors",
+    "category": "Biltong Menu",
+    "description": "High-protein grass-fed beef cured in traditional South African spices.",
+    "icon": "Beef",
+    "items": [
+      { "id": "biltong-yellow", "name": "Yellow Fat Biltong (250g)", "price": 100.00, "priceDisplay": "R100.00", "unit": "250g pack (R399.99/kg)", "category": "Biltong" },
+      { "id": "biltong-white", "name": "White Fat Lean Biltong (250g)", "price": 87.50, "priceDisplay": "R87.50", "unit": "250g pack (R350/kg)", "category": "Biltong" },
+      { "id": "biltong-babalas", "name": "Babalas Mix Biltong (250g)", "price": 93.75, "priceDisplay": "R93.75", "unit": "250g pack (R375/kg)", "category": "Biltong" },
+      { "id": "droewors-trad", "name": "Traditional Droewors (250g)", "price": 87.50, "priceDisplay": "R87.50", "unit": "250g pack (R350/kg)", "category": "Biltong" }
+    ]
+  },
+  {
+    "id": "coffee",
+    "title": "3. Artisan Coffee & Barista Bar",
+    "category": "Cafe Menu",
+    "description": "100% Arabica ethically sourced coffee beans brewed to perfection.",
+    "icon": "Coffee",
+    "items": [
+      { "id": "coffee-espresso", "name": "Double Espresso", "price": 24.00, "priceDisplay": "R24.00", "unit": "cup", "category": "Coffee" },
+      { "id": "coffee-cappuccino", "name": "Barista Cappuccino", "price": 32.00, "priceDisplay": "R32.00", "unit": "cup", "category": "Coffee" },
+      { "id": "coffee-flatwhite", "name": "Flat White", "price": 34.00, "priceDisplay": "R34.00", "unit": "cup", "category": "Coffee" },
+      { "id": "coffee-americano", "name": "Long Black Americano", "price": 28.00, "priceDisplay": "R28.00", "unit": "cup", "category": "Coffee" },
+      { "id": "coffee-icedlatte", "name": "Chilled Iced Latte", "price": 38.00, "priceDisplay": "R38.00", "unit": "cup", "category": "Coffee" }
+    ]
+  },
+  {
+    "id": "baked",
+    "title": "4. Bakery & Savoury Treats",
+    "category": "Savoury & Sweet",
+    "description": "Homemade with love • Made to make your day sweeter.",
+    "icon": "CakeSlice",
+    "items": [
+      { "id": "bakery-seedbread", "name": "Artisanal Seed Bread", "price": 25.00, "priceDisplay": "R25.00", "unit": "loaf", "category": "Bakery" },
+      { "id": "bakery-quiche", "name": "Gourmet Quiche Portion", "price": 110.00, "priceDisplay": "R110.00", "unit": "portion", "category": "Bakery" },
+      { "id": "bakery-pie", "name": "Cheese Griller Pie", "price": 42.00, "priceDisplay": "R42.00", "unit": "each (R37-R47)", "category": "Bakery" },
+      { "id": "bakery-krispy", "name": "Rice Krispy Treat", "price": 15.00, "priceDisplay": "R15.00", "unit": "square", "category": "Bakery" },
+      { "id": "bakery-biscotti", "name": "Handmade Biscotti Pack", "price": 15.00, "priceDisplay": "R15.00", "unit": "2 pack", "category": "Bakery" }
+    ]
+  },
+  {
+    "id": "giftware",
+    "title": "5. Knick Knacks & Giftware",
+    "category": "Retail Boutique",
+    "description": "Reusable eco water jugs, insulated flasks, and lifestyle accessories.",
+    "icon": "Gift",
+    "items": [
+      { "id": "gift-jug-5l", "name": "Hydr8 Reusable 5L BPA-Free Dispenser Jug", "price": 120.00, "priceDisplay": "R120.00", "unit": "each", "category": "Giftware" },
+      { "id": "gift-flask-750", "name": "Matte Blue Thermal Flask 750ml", "price": 180.00, "priceDisplay": "R180.00", "unit": "each", "category": "Giftware" },
+      { "id": "gift-tote", "name": "Hydr8 Organic Canvas Tote", "price": 85.00, "priceDisplay": "R85.00", "unit": "each", "category": "Giftware" }
+    ]
+  },
+  {
+    "id": "spices",
+    "title": "6. Braai Accessories & Spices",
+    "category": "Artisanal Spices",
+    "description": "Non-irradiated dry rubs, braai salts, and grilling accessories.",
+    "icon": "Flame",
+    "items": [
+      { "id": "spice-braai-salt", "name": "Hydr8 Signature Braai Salt (200g)", "price": 45.00, "priceDisplay": "R45.00", "unit": "jar", "category": "Spices" },
+      { "id": "spice-steak-rub", "name": "Smoked Garlic Steak Rub (150g)", "price": 50.00, "priceDisplay": "R50.00", "unit": "jar", "category": "Spices" },
+      { "id": "spice-chilli-salt", "name": "Habanero Sea Salt Grinder", "price": 55.00, "priceDisplay": "R55.00", "unit": "grinder", "category": "Spices" },
+      { "id": "braai-tongs", "name": "Heavy Duty Stainless Braai Tongs", "price": 140.00, "priceDisplay": "R140.00", "unit": "pair", "category": "Spices" }
+    ]
+  }
+]
