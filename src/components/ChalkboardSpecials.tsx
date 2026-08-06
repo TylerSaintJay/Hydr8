@@ -19,7 +19,7 @@ export default function ChalkboardSpecials({ onAddToCart }: ChalkboardSpecialsPr
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
         {/* Outer Chalkboard Frame */}
-        <div className="relative bg-chalkboard rounded-[3rem] p-8 sm:p-12 lg:p-16 border-8 border-brand-wood/30 shadow-2xl overflow-hidden">
+        <div className="relative bg-chalkboard rounded-[3rem] p-8 sm:p-12 lg:p-16 border-8 border-brand-wood/30 shadow-[0_30px_60px_-15px_rgba(10,37,64,0.5)] overflow-hidden transform -rotate-1 md:-rotate-1 lg:hover:rotate-0 transition-transform duration-500">
           
           {/* Subtle Chalk Dust Effect & Wood Trim */}
           <div className="absolute top-0 left-0 w-full h-3 bg-brand-wood/40" />
@@ -32,7 +32,7 @@ export default function ChalkboardSpecials({ onAddToCart }: ChalkboardSpecialsPr
               <span>Linmeyer Daily Board</span>
             </div>
             
-            <h2 className="font-chalk text-5xl sm:text-6xl md:text-7xl text-white tracking-wide leading-none mb-4 drop-shadow-md">
+            <h2 className="font-chalk text-6xl sm:text-7xl md:text-8xl text-white tracking-wide leading-none mb-4 drop-shadow-[0_2px_4px_rgba(255,255,255,0.2)]">
               Hydr8 Daily Specials
             </h2>
             
@@ -94,7 +94,7 @@ export default function ChalkboardSpecials({ onAddToCart }: ChalkboardSpecialsPr
                         {item.badge}
                       </span>
                       <div className="text-right">
-                        <span className="font-chalk text-3xl font-bold text-amber-300 block leading-none">
+                        <span className="font-chalk text-4xl font-bold text-amber-300 block leading-none drop-shadow-sm">
                           {item.price}
                         </span>
                         <span className="text-[10px] text-white/50 font-medium tracking-wide">

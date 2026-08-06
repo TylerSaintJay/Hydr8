@@ -7,8 +7,8 @@ export default function Hero() {
       <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 h-[600px] w-[600px] rounded-full bg-wood-texture opacity-30 blur-3xl pointer-events-none" />
       <div className="relative mx-auto flex max-w-7xl w-full flex-col items-center justify-between gap-12 px-6 lg:flex-row lg:px-8">
         
-        {/* Left: Text Content */}
-        <div className="flex w-full flex-col items-center text-center lg:items-start lg:text-left lg:w-1/2">
+        {/* Text Content */}
+        <div className="flex w-full flex-col items-center text-center">
           
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -53,26 +53,6 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* Right: Lifestyle Image */}
-        <motion.div 
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="relative w-full lg:w-1/2 flex items-center justify-center animate-glow"
-        >
-          <div className="relative w-full max-w-lg">
-            {/* Decorative background glow */}
-            <div className="absolute -inset-4 rounded-[2.5rem] bg-brand-wood/10 blur-2xl -z-10" />
-            
-            <div className="overflow-hidden rounded-[2rem] border-4 border-white shadow-2xl shadow-brand-navy/15">
-              <img
-                src="/assets/hydr8_lifestyle.png"
-                alt="Hydr8 Premium Lifestyle Offerings"
-                className="w-full h-auto object-cover aspect-[4/3] scale-100 hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div>
-        </motion.div>
 
       </div>
     </section>

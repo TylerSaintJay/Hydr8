@@ -28,7 +28,7 @@ export default function Footer() {
               Sit. Savour. Stay. <span className="font-sans text-brand-cream">♡</span>
             </h2>
             <p className="font-chalk text-2xl text-amber-200 mt-2">
-              Homemade with love • Made to make your day sweeter
+              Freshly made daily
             </p>
             <span className="hidden sm:block text-brand-cream/30 text-2xl mt-4">—</span>
           </div>

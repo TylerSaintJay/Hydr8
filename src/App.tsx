@@ -2,13 +2,9 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ChalkboardSpecials from './components/ChalkboardSpecials';
-import Pillars from './components/Pillars';
-import ProductOfferings from './components/ProductOfferings';
-import WaterEducation from './components/WaterEducation';
-import WaterLab from './components/WaterLab';
+import MenuCarousel from './components/MenuCarousel';
 import Calculator from './components/Calculator';
 import MediaCarousel from './components/MediaCarousel';
-import StorePreview from './components/StorePreview';
 import BraaiWellnessTips from './components/BraaiWellnessTips';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
@@ -74,26 +70,14 @@ export default function App() {
         {/* Animated Daily Blackboard Specials */}
         <ChalkboardSpecials onAddToCart={handleAddToCart} />
 
-        {/* 5 Lifestyle Pillars */}
-        <Pillars />
-
-        {/* 6 Product Offerings Showcase */}
-        <ProductOfferings onAddToCart={handleAddToCart} />
-
-        {/* Water Education Section: 8-Stage RO System */}
-        <WaterEducation />
-
-        {/* Water Lab Refill Rates & Master Label */}
-        <WaterLab />
+        {/* Menu Image Carousel */}
+        <MenuCarousel />
 
         {/* Cost & Savings Calculator */}
         <Calculator />
 
         {/* Storefront Media Carousel */}
         <MediaCarousel />
-
-        {/* Store Preview Gallery */}
-        <StorePreview />
 
         {/* Braai & Wellness Magazine Tips */}
         <BraaiWellnessTips />

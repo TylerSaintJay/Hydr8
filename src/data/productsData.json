@@ -47,7 +47,7 @@
     "id": "baked",
     "title": "4. Bakery & Savoury Treats",
     "category": "Savoury & Sweet",
-    "description": "Homemade with love • Made to make your day sweeter.",
+    "description": "Freshly baked savoury and sweet treats.",
     "icon": "CakeSlice",
     "items": [
       { "id": "bakery-seedbread", "name": "Artisanal Seed Bread", "price": 25.00, "priceDisplay": "R25.00", "unit": "loaf", "category": "Bakery" },

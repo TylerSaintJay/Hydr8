@@ -32,9 +32,11 @@ export default function WhatsAppDrawer({
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const phoneNumber = '27621836915'; // Hydr8 Official WhatsApp 062 183 6915
 
-  const categories = ['All', 'Water', 'Biltong', 'Coffee', 'Bakery', 'Spices'];
+  const categories = ['All', 'Water', 'Biltong', 'Coffee'];
 
-  const allProducts = productsData.flatMap(cat => cat.items);
+  const allProducts = productsData
+    .flatMap(cat => cat.items)
+    .filter(p => ['Water', 'Biltong', 'Coffee'].includes(p.category));
 
   const filteredProducts = selectedCategory === 'All'
     ? allProducts

@@ -102,10 +102,7 @@ export default function Header({ onOpenOrderDrawer, cartCount }: HeaderProps) {
           
           {/* Left: Brand Wordmark */}
           <a href="#" className="flex items-center gap-2 cursor-pointer group">
-            <div className="h-9 w-9 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
-              <Droplets className="h-5 w-5" />
-            </div>
-            <span className="text-2xl font-black tracking-tight text-brand-blue uppercase">Hydr8</span>
+            <img src="/assets/logo2.jpeg" alt="Hydr8 Logo" className="h-12 w-12 rounded-full object-cover mix-blend-multiply contrast-125" />
           </a>
 
           {/* Center: Desktop Navigation Links */}
