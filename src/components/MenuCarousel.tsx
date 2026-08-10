@@ -5,11 +5,11 @@ import { AnimatePresence } from 'motion/react';
 
 const menuItems = [
   { id: 1, title: 'Water', src: '/assets/menu/1.jpeg' },
-  { id: 2, title: 'Biltong', src: '/assets/menu/2.jpeg' },
-  { id: 3, title: 'Coffee', src: '/assets/menu/3.jpeg' },
+  { id: 2, title: 'Coffee', src: '/assets/menu/2.jpeg' },
+  { id: 3, title: 'Biltong', src: '/assets/menu/3.jpeg' },
   { id: 4, title: 'Baked Goods', src: '/assets/menu/4.jpeg' },
-  { id: 5, title: 'Knick Knacks', src: '/assets/menu/5.jpeg' },
-  { id: 6, title: 'Brii accessories/spices', src: '/assets/menu/6.jpeg' },
+  { id: 5, title: 'Local Treasures', src: '/assets/menu/5.jpeg' },
+  { id: 6, title: 'Spices & Braai Essentials', src: '/assets/menu/6.jpeg' },
 ];
 
 export default function MenuCarousel() {
@@ -43,8 +43,11 @@ export default function MenuCarousel() {
   };
 
   return (
-    <section className="py-16 bg-transparent relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-8 text-center">
+    <section className="py-8 sm:py-16 bg-transparent relative overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-8 text-center relative">
+        <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-xs font-bold uppercase tracking-widest shadow-sm">
+          <span>Pre-Orders Available</span>
+        </div>
         <h2 className="text-4xl sm:text-5xl font-black text-brand-navy uppercase tracking-tight">
           Explore Our Menu
         </h2>

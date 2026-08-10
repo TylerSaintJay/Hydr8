@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ChalkboardSpecials from './components/ChalkboardSpecials';
 import MenuCarousel from './components/MenuCarousel';
-import Calculator from './components/Calculator';
 import MediaCarousel from './components/MediaCarousel';
 import BraaiWellnessTips from './components/BraaiWellnessTips';
 import Testimonials from './components/Testimonials';
@@ -68,13 +67,11 @@ export default function App() {
         <Hero />
 
         {/* Animated Daily Blackboard Specials */}
-        <ChalkboardSpecials onAddToCart={handleAddToCart} />
+        <ChalkboardSpecials />
 
         {/* Menu Image Carousel */}
         <MenuCarousel />
 
-        {/* Cost & Savings Calculator */}
-        <Calculator />
 
         {/* Storefront Media Carousel */}
         <MediaCarousel />

@@ -1,21 +1,26 @@
 import { motion } from 'motion/react';
 import { BadgeCheck, Quote } from 'lucide-react';
 
+import { MessageCircle } from 'lucide-react';
+
 const testimonials = [
   {
-    quote: "I used to lug heavy 5L Checkers bottles home every week. The Hydr8 membership at their café is a completely different experience. Safe, cheaper, and no plastic guilt.",
-    author: "Sarah V.",
-    role: "Local Mom & Shopper",
+    quote: "Placeholder for WhatsApp review. Waiting for client to provide exact text.",
+    author: "Client to Provide",
+    role: "Verified WhatsApp Customer",
+    platform: "WhatsApp"
   },
   {
-    quote: "As a coach, hydration isn't just about drinking water; it's about what's IN the water. The remineralization process they use is lab-verified. Highly recommend.",
-    author: "Thabo M.",
-    role: "Fitness Coach",
+    quote: "The best water I've ever tasted, and their biltong is incredible! Great local spot in Linmeyer.",
+    author: "Google Reviewer",
+    role: "Local Guide",
+    platform: "Google"
   },
   {
-    quote: "It's literally my 'third place' now. I grab my refills, have a quick meeting, and enjoy the neighbourhood vibe. The water tastes incredibly pure.",
-    author: "Jenna L.",
-    role: "Graphic Designer",
+    quote: "Placeholder for WhatsApp review. Waiting for client to provide exact text.",
+    author: "Client to Provide",
+    role: "Verified WhatsApp Customer",
+    platform: "WhatsApp"
   }
 ];
 
@@ -47,20 +52,31 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <motion.div 
-              key={t.author}
+              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative rounded-[2rem] bg-wood-texture p-8 shadow-xl shadow-brand-navy/5 border border-brand-wood/40 flex flex-col justify-between text-brand-navy"
+              className="relative rounded-[2rem] bg-white p-8 shadow-xl shadow-brand-navy/5 border border-brand-blue/10 flex flex-col justify-between text-brand-navy"
             >
               <div>
-                <Quote className="h-8 w-8 text-brand-blue/70 mb-6" />
-                <p className="text-lg italic font-sans leading-snug mb-8 relative z-10 text-brand-navy/90">
+                <div className="flex justify-between items-start mb-6">
+                  <Quote className="h-8 w-8 text-brand-blue/30" />
+                  {t.platform === 'WhatsApp' ? (
+                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 text-[10px] font-bold uppercase tracking-wider">
+                      <MessageCircle className="h-3 w-3" /> WhatsApp
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-600 border border-red-500/20 text-[10px] font-bold uppercase tracking-wider">
+                      Google Review
+                    </div>
+                  )}
+                </div>
+                <p className="text-lg italic font-sans leading-snug mb-8 relative z-10 text-brand-navy/80">
                   "{t.quote}"
                 </p>
               </div>
-              <div className="mt-auto border-t border-brand-navy/10 pt-6">
+              <div className="mt-auto border-t border-brand-blue/5 pt-6">
                 <div className="font-bold">{t.author}</div>
                 <div className="text-[10px] uppercase tracking-wider font-bold text-brand-blue mt-1">{t.role}</div>
               </div>

@@ -19,8 +19,11 @@ export default function Footer() {
           viewport={{ once: true }}
           className="relative rounded-[2.5rem] bg-brand-blue overflow-hidden px-6 py-16 sm:py-20 flex flex-col items-center justify-center text-center shadow-2xl shadow-brand-blue/20"
         >
-          {/* Decorative background texture */}
+          {/* Decorative background texture and watermark */}
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent blur-xl" />
+          <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+            <img src="/assets/logo2.jpeg" alt="Watermark" className="h-[150%] w-auto object-cover rounded-full mix-blend-screen" />
+          </div>
           
           <div className="relative z-10 flex flex-col items-center">
             <span className="hidden sm:block text-brand-cream/30 text-2xl mb-4">—</span>
@@ -41,10 +44,8 @@ export default function Footer() {
           {/* Brand Col */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-blue/10">
-                <Droplets className="h-6 w-6 text-brand-blue" />
-              </div>
-              <span className="text-2xl font-black tracking-tight text-brand-blue uppercase">Hydr8</span>
+              <img src="/assets/logo2.jpeg" alt="Hydr8 Logo" className="h-12 w-12 rounded-full object-cover mix-blend-multiply contrast-125" />
+              <span className="text-3xl font-black tracking-tight text-brand-blue">Hydr8</span>
             </div>
             <p className="text-sm font-medium text-brand-navy/70 leading-relaxed max-w-xs mb-6">
               Everything you need, all in one place. Your neighbourhood destination for 8-stage purified water, craft coffee, artisan biltong, fresh bakery, and braai spices.

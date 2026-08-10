@@ -1,41 +1,77 @@
 import { motion } from 'motion/react';
-import { Flame, Heart, BookOpen, Utensils, Droplets, Check } from 'lucide-react';
+import { Flame, Heart, BookOpen, Utensils, Droplets, Check, Coffee } from 'lucide-react';
 
 const articles = [
   {
-    category: "Braai & Pairing",
-    title: "The Ultimate South African Braai Spice Rub Guide",
-    desc: "How non-irradiated spices and coarse sea salt elevate yellow-fat steak and braaimanoeuvres without chemical anti-caking agents.",
-    icon: Flame,
-    readTime: "3 min read",
-    tips: [
-      "Always rub spices 30 mins before going over hot coals",
-      "Pair heavy beef cuts with our Smoked Garlic Steak Rub",
-      "Keep hydrated with Alkaline water during long afternoon braais"
-    ]
-  },
-  {
-    category: "Hydration Science",
-    title: "Why Alkaline Water (pH 8.5+) Speeds Post-Workout Recovery",
-    desc: "Biohacking your daily hydration: how remineralized calcium and magnesium neutralize lactic acid buildup after intense training sessions.",
+    category: "Water",
+    title: "The Science of Reverse Osmosis Water",
+    desc: "Our 8-stage purification process removes impurities, remineralizes with essential electrolytes, and perfects the pH for maximum hydration.",
     icon: Droplets,
-    readTime: "4 min read",
-    tips: [
-      "Drink 750ml Alkaline water within 30 mins post-workout",
-      "Remineralization balances cellular hydration levels",
-      "Refill reusable jugs to cut plastic waste in half"
-    ]
-  },
-  {
-    category: "Lifestyle & Food",
-    title: "Pairing Artisan Seed Bread with Gourmet Quiche & Biltong",
-    desc: "Create the perfect Linmeyer weekend brunch platter using our daily fresh bakery loafs and traditional cured beef.",
-    icon: Utensils,
     readTime: "2 min read",
     tips: [
-      "Slice artisanal seed bread thick and toast lightly",
-      "Pair quiche with fresh coffee brewed from 100% Arabica beans",
-      "Grab a 250g Babalas biltong pack for afternoon guests"
+      "Purified through advanced 8-stage filtration",
+      "Remineralized for optimal pH and taste",
+      "Bring your own bottle to reduce plastic waste"
+    ]
+  },
+  {
+    category: "Coffee",
+    title: "Craft Coffee: 100% Arabica Excellence",
+    desc: "Discover the rich, bold flavors of our locally roasted coffee, prepared precisely to kickstart your day or pair with our fresh bakery items.",
+    icon: Coffee,
+    readTime: "3 min read",
+    tips: [
+      "Brewed fresh from premium Arabica beans",
+      "Perfectly paired with artisanal baked goods",
+      "Available hot or iced for any weather"
+    ]
+  },
+  {
+    category: "Biltong",
+    title: "Traditional South African Biltong",
+    desc: "Cured to perfection using time-honored recipes, our biltong provides the ultimate savory, high-protein snack for any occasion.",
+    icon: Flame,
+    readTime: "2 min read",
+    tips: [
+      "Cured using traditional South African spices",
+      "High-protein, low-carb premium snacking",
+      "Available in multiple cuts and flavors"
+    ]
+  },
+  {
+    category: "Baked Goods",
+    title: "Fresh Daily Artisanal Baked Goods",
+    desc: "From seeded loaves to decadent tarts, our bakery items are crafted daily to guarantee freshness and complement your coffee perfectly.",
+    icon: Utensils,
+    readTime: "3 min read",
+    tips: [
+      "Baked fresh every single morning",
+      "Sourced from local artisanal bakers",
+      "Perfect for breakfast or afternoon tea"
+    ]
+  },
+  {
+    category: "Local Treasures",
+    title: "Discover Unique Local Treasures",
+    desc: "Explore our curated selection of boutique gifts and handcrafted curios, handpicked to support our vibrant local community.",
+    icon: Heart,
+    readTime: "2 min read",
+    tips: [
+      "Support local artisans and creators",
+      "Unique gifts for every special occasion",
+      "Curated lifestyle products for your home"
+    ]
+  },
+  {
+    category: "Spices & Braai Essentials",
+    title: "Elevate Your Braai Experience",
+    desc: "Master the grill with our premium selection of non-irradiated spices and coarse rubs, guaranteed to bring out the best in your cuts.",
+    icon: Flame,
+    readTime: "4 min read",
+    tips: [
+      "Non-irradiated, high-quality spice blends",
+      "Perfect for yellow-fat steak and chicken",
+      "Apply 30 mins before going over coals"
     ]
   }
 ];
@@ -52,10 +88,10 @@ export default function BraaiWellnessTips() {
             <span>Linmeyer Lifestyle Magazine</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-brand-navy uppercase tracking-tight mb-4">
-            Braai & Wellness Journal
+            The Hydr8 Lifestyle Guide
           </h2>
-          <p className="font-script text-3xl text-brand-blue">
-            Recipes, spice pairing secrets & biohacking your daily hydration
+          <p className="font-chalk text-3xl text-brand-blue">
+            Everything you need for hydration, cravings & weekend braais
           </p>
         </div>
 
