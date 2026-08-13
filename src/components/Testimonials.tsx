@@ -5,8 +5,8 @@ import { MessageCircle } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Placeholder for WhatsApp review. Waiting for client to provide exact text.",
-    author: "Client to Provide",
+    quote: "About Hydr8.... Hope I have that right.... A wonderful initiative right in our midst! The great water story, really reasonably priced coffee packets of good quality for your home brewing... And!!!! That wonderful Australian gingerbeer! Wonderful as a special luxury treat! Well done Dante' and others.",
+    author: "Local Resident",
     role: "Verified WhatsApp Customer",
     platform: "WhatsApp"
   },
@@ -17,8 +17,8 @@ const testimonials = [
     platform: "Google"
   },
   {
-    quote: "Placeholder for WhatsApp review. Waiting for client to provide exact text.",
-    author: "Client to Provide",
+    quote: "Used them for the first time today. Absolute pleasure to deal with, quick and easy ordering process. The water tastes so much better than what we used before.",
+    author: "Satisfied Customer",
     role: "Verified WhatsApp Customer",
     platform: "WhatsApp"
   }

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MapPin, Clock, Droplets, ArrowRight, MessageCircle, Phone } from 'lucide-react';
+import { MapPin, Clock, Droplets, ArrowRight, MessageCircle, Phone, Instagram, Facebook, Star } from 'lucide-react';
 
 export default function Footer() {
   const hours = [
@@ -50,9 +50,22 @@ export default function Footer() {
             <p className="text-sm font-medium text-brand-navy/70 leading-relaxed max-w-xs mb-6">
               Everything you need, all in one place. Your neighbourhood destination for 8-stage purified water, craft coffee, artisan biltong, fresh bakery, and braai spices.
             </p>
-            <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-xl inline-flex border border-emerald-200">
-              <MessageCircle className="h-4 w-4" />
-              <span>WhatsApp: 062 183 6915</span>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-xl inline-flex border border-emerald-200 w-fit">
+                <MessageCircle className="h-4 w-4" />
+                <span>WhatsApp: 062 183 6915</span>
+              </div>
+              <div className="flex items-center gap-4 mt-2">
+                <a href="https://www.instagram.com/hydr8_johannesburg_south_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a href="https://www.facebook.com/people/Hydr8-Johannesburg-South/61581750068319/" target="_blank" rel="noreferrer" className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="https://share.google/79yCfeXzS4SdPF72i" target="_blank" rel="noreferrer" className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors" title="Google Business">
+                  <Star className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
 

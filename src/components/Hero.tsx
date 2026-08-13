@@ -14,7 +14,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-7xl sm:text-8xl lg:text-[10rem] font-black text-brand-blue leading-none tracking-tighter uppercase mb-4"
+            className="text-7xl sm:text-8xl lg:text-[10rem] font-black text-brand-blue leading-none tracking-tighter mb-4"
           >
             Hydr8
           </motion.h1>
@@ -28,8 +28,7 @@ export default function Hero() {
             {/* Small decorative lines around the script font similar to the flyer */}
             <span className="absolute -left-6 top-1/2 -translate-y-1/2 text-brand-blue/30 hidden sm:block">\\\</span>
             <h2 className="font-script text-4xl sm:text-5xl lg:text-6xl text-brand-navy leading-relaxed px-4">
-              Everything you need,<br />
-              <span className="text-brand-blue">all in one place</span>
+              Sit. Savour. <span className="text-brand-blue">Stay.</span>
             </h2>
             <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-brand-blue/30 hidden sm:block">///</span>
           </motion.div>
