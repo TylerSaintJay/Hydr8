@@ -3,8 +3,8 @@ import { motion } from 'motion/react';
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden bg-transparent pt-32 pb-16 lg:pt-40 flex items-center">
-      {/* Decorative wood texture blob */}
-      <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 h-[600px] w-[600px] rounded-full bg-wood-texture opacity-30 blur-3xl pointer-events-none" />
+      {/* Decorative blue texture blob (replaced wood texture) */}
+      <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 h-[600px] w-[600px] rounded-full bg-brand-blue opacity-10 blur-3xl pointer-events-none" />
       <div className="relative mx-auto flex max-w-7xl w-full flex-col items-center justify-between gap-12 px-6 lg:flex-row lg:px-8">
         
         {/* Text Content */}

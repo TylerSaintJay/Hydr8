@@ -51,6 +51,10 @@ export default function Footer() {
               Everything you need, all in one place. Your neighbourhood destination for 8-stage purified water, craft coffee, artisan biltong, fresh bakery, and braai spices.
             </p>
             <div className="flex flex-col gap-4">
+              <a href="https://chat.whatsapp.com/KTcPSMzwNqgIFjAf5aE801?s=sw&p=i&ilr=1" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-emerald-600 font-bold text-sm bg-emerald-50 hover:bg-emerald-100 transition-colors px-3 py-1.5 rounded-xl inline-flex border border-emerald-200 w-fit">
+                <MessageCircle className="h-4 w-4" />
+                <span>Join our WhatsApp Group</span>
+              </a>
               <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm bg-emerald-50 px-3 py-1.5 rounded-xl inline-flex border border-emerald-200 w-fit">
                 <MessageCircle className="h-4 w-4" />
                 <span>WhatsApp: 062 183 6915</span>
