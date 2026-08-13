@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, ArrowRight, Wifi, Clock, ShoppingBag, Droplets } from 'lucide-react';
+import { Menu, X, ArrowRight, Wifi, Clock, ShoppingBag, Droplets, MessageCircle } from 'lucide-react';
 
 interface HeaderProps {
   onOpenOrderDrawer: () => void;
@@ -78,13 +78,18 @@ export default function Header({ onOpenOrderDrawer, cartCount }: HeaderProps) {
             </span>
           </div>
 
-          {/* Lounge Amenity Badge */}
+          {/* Lounge Amenity Badge & WhatsApp */}
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 text-amber-300 font-bold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-300/20">
+            <a href="https://chat.whatsapp.com/KTcPSMzwNqgIFjAf5aE801?s=sw&p=i&ilr=1" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-emerald-400 font-bold bg-emerald-400/10 hover:bg-emerald-400/20 transition-colors px-3 py-1 rounded-full border border-emerald-400/20 cursor-pointer">
+              <MessageCircle className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Join WhatsApp Group</span>
+              <span className="sm:hidden">Join Group</span>
+            </a>
+            <span className="hidden lg:flex items-center gap-1.5 text-amber-300 font-bold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-300/20">
               <Wifi className="h-3.5 w-3.5" />
               Free WiFi • Sit & Stay
             </span>
-            <span className="hidden md:inline text-white/50">📍 35 Elizabeth Ave, Linmeyer</span>
+            <span className="hidden xl:inline text-white/50 text-[11px]">📍 35 Elizabeth Ave, Linmeyer</span>
           </div>
 
         </div>
